@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
   	@lead = Lead.new(lead_params)
 
   	if @lead.save
-  		LeadMailer.lead_email(@lead)
+  		LeadMailer.lead_email(@lead).deliver_now
   		redirect_to action: 'thank_you', :anchor => "contact-section"
   	else 
   		redirect_to action 'index'
