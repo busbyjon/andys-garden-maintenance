@@ -8,12 +8,12 @@
 
                 <label for="show-menu" class="show-menu"><i class="fa fa-bars fa-2x"></i></label>
                 <input type="checkbox" id="show-menu" role="button"/>
-                <nav>
+                <nav class="nav">
                     <ul id="menu">
-                        <li class="active"><a href="#home-section">Home</a></li>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="#testimonial-section">Testimonials</a></li>
-                        <li class="highlight-nav"><a href="#contact-section">Contact</a></li>
+                        <li class="active"><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li class="highlight-nav"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -22,13 +22,13 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
 
-                <div class="section" id="hero">
+                <div class="section scrollto" id="hero">
                     <a name="home-section"></a> 
                     <img class="logo" src="img/logo.svg" width="280" alt="Andy's Garden Maintenance Logo" />
                     <h1>Gardening services in Bucks & Berks</h1>
                     <h2>07805 406178 | andysgardenm@gmail.com</h2>
                 </div>
-                <div class="section leaf-background" id="about">
+                <div class="section leaf-background about-section scrollto" id="about">
 
                     <a name="about-section"></a> 
                     <h3>About</h3>
@@ -40,24 +40,54 @@
                 </div>
                 <div class="section" id="gallery">
                     <div id="carosel" class="responsive-carosel">
-                        <img width="145" height="145" src="img/gallery/lawn-1.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-2.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-3.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-4.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-5.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-6.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-7.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-8.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/lawn-9.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/shed-1.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/shed-2.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/shed-3.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/after-1.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/after-2.jpg" alt="An example of Andy's work"/>
-                        <img width="145" height="145" src="img/gallery/after-3.jpg" alt="An example of Andy's work"/>
+                        <a href="img/gallery/large/lawn-1.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-1.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-2.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-2.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-3.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-3.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-4.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-4.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-5.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-5.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-6.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-6.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-7.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-7.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-8.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-8.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/lawn-9.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/lawn-9.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/shed-1.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/shed-1.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/shed-2.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/shed-2.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/shed-3.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/shed-3.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/after-1.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/after-1.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/after-2.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/after-2.jpg" alt="An example of Andy's work"/>
+                        </a>
+                        <a href="img/gallery/large/after-3.jpg" class='gallery-link'>
+                            <img width="145" height="145" src="img/gallery/after-3.jpg" alt="An example of Andy's work"/>
+                        </a>
                     </div>
                 </div>
-                <div class="section leaf-background" id='testimonials'>
+                <div class="section leaf-background scrollto" id='testimonials'>
                     <a name="testimonial-section"></a> 
                     <div id="responsive-testimonials" class="responsive-testimonials">
                         <div class="testimonial">
@@ -102,7 +132,7 @@
                         <li>Waste Disposal</li>
                     </ul>
                 </div>
-                <div class="section" id="contact">
+                <div class="section scrollto" id="contact">
                     <a name="contact-section"></a> 
                     <h3>Contact Us</h3>
                     <%= form_for :lead, url: {action: "submit_lead"}, html: {id:"contact-form"} do |f| %>
@@ -169,5 +199,29 @@
               slidesToScroll: 1,
               arrows: false,
               adaptiveHeight:true
+            });
+            $(document).ready( function() {
+                $('.nav').stickyNavbar();
+                $('.gallery-link').magnificPopup({
+                    type:'image',   
+                    gallery:{
+                        enabled:true
+                    },
+                    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+                    zoom: {
+                        enabled: true, // By default it's false, so don't forget to enable it
+
+                        duration: 300, // duration of the effect, in milliseconds
+                        easing: 'ease-in-out', // CSS transition easing function
+
+                        opener: function(openerElement) {
+                            // openerElement is the element on which popup was initialized, in this case its <a> tag
+                            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                            return openerElement.is('img') ? openerElement : openerElement.find('img');
+                        }
+                    }
+
+                });
             });
         </script>

@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require main
+//= require vendor/slick
+//= require vendor/modernizr-2.8.3.min
+//= require vendor/jquery.stickyNavbar.min
+//= require vendor/jquery.magnific.min
+

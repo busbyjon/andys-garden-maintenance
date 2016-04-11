@@ -100,6 +100,9 @@ textarea {
 nav {
     text-transform: uppercase;
     font-weight: 300;
+    background-color: #FFFFFF;
+    z-index: 100;
+    width: 100%;
 }
 
 nav ul {
@@ -128,7 +131,7 @@ nav li a:hover:not(.active) {
     color: #FFFFFF;
 }
 
-nav .active a {
+nav a.active  {
     background-color: #023A1E;
     color: #FFFFFF;
 }
@@ -158,6 +161,7 @@ h3 {
 #hero {
     background-image: url("../img/hero.png");
     color:#FFFFFF;
+    margin-top: 92px;
 }
 
 #hero .logo {
@@ -185,7 +189,6 @@ h2 {
 
 #about #about-text {
     margin:auto;
-    font-size: 14px;
     width:75%;
 }
 
@@ -205,7 +208,7 @@ h2 {
 }
 
 #testimonials {
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -249,6 +252,11 @@ h2 {
 #testimonials .responsive-testimonials {
     width:75%;
     margin:auto;
+}
+
+
+.slick-dots li button:before {
+    font-size: 8px !important;
 }
 
 #services {
@@ -356,6 +364,13 @@ input[type=checkbox]:checked ~ nav ul{
     display: block;
 }
 
+/* fixes for really large screens */
+@media screen and (min-width : 1250px) {
+    #hero {
+        background-size: 100%;
+    }
+}
+
 @media screen and (max-width : 760px){
     /*Make dropdown links appear inline*/
     nav ul {
@@ -382,6 +397,10 @@ input[type=checkbox]:checked ~ nav ul{
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
+    }
+
+    #hero {
+        margin-top: 0px;
     }
 
     #services ul {
@@ -430,6 +449,30 @@ input[type=checkbox]:checked ~ nav ul{
 
 
 
+}
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
 }
 
 
