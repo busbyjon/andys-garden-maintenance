@@ -38,7 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-  gem 'activeadmin'
-  gem 'sass-rails'
-  gem "meta_search", '>= 1.1.0.pre'
-
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'devise'

@@ -12,8 +12,8 @@
  *
  *= require normalize
  *= require main
- *= require_tree .
- *= require_self
+ *= require slick
+ *= require slick-theme
  */
 
 

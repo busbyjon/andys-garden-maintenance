@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Lead Submitted!</h1>
+    <p>
+      Hi Andy,<br/>
+      You have a new lead on your shiny new website!<br>
+    </p>
+    <h2>Lead Details</h2>
+    <p>
+      Lead Name : <%= @lead.name %> <br/>
+      Lead Phone : <%= @lead.phone %> <br/>
+      Lead Query : <%= @lead.query %> <br/>      
+    </p>
+    <p>
+      To login to the site and view your leads goto <%= @url %>.
+    </p>
+  </body>
+</html>
