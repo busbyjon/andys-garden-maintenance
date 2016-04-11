@@ -186,11 +186,15 @@ h2 {
     background-image: url("../img/leaf-background.png");
 }
 
+.text-section {
+    width:800px;
+}
+
 
 #about #about-text {
     margin:auto;
-    width:75%;
 }
+
 
 #gallery {
     background-color:#78BA22;
@@ -250,7 +254,6 @@ h2 {
 }
 
 #testimonials .responsive-testimonials {
-    width:75%;
     margin:auto;
 }
 
@@ -397,6 +400,10 @@ input[type=checkbox]:checked ~ nav ul{
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
+    }
+
+    .text-section {
+        width:70%;
     }
 
     #hero {
