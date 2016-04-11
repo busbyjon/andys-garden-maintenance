@@ -313,7 +313,7 @@ h2 {
     position:relative;
     height:220px;
     display: block;
-    background:url("../img/footer.jpg") no-repeat center top;
+    background:url("../img/footer.jpg") repeat-x center top;
 }
 
 .footer-container .wrapper-left {
