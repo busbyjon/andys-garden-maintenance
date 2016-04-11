@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get "thank_you" => "welcome#thank_you"
 
   root 'welcome#index'
+
+  match 'submit_lead' => "welcome#submit_lead", :as => 'submit_lead', :via => [:post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
