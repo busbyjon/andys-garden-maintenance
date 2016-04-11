@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'devise'
+gem 'rails_12factor', group: :production
