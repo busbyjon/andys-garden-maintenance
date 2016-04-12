@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jon Busby -- Developer -- @busbyjon
+    Ruby Rose Lee -- Designer -- 
 
 # THANKS
 
-    <name>
+    Jon Busby - jon.busby@wearetwogether.com
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Heroku, jQuery, Modernizr, Normalize.css
