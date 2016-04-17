@@ -110,7 +110,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     list-style-type: none;
-
+    float: left;
 }
 
 nav ul li {
@@ -145,6 +145,10 @@ nav .highlight-nav a  {
 header .align-right {
     float: right;
     color: #000000;
+}
+
+header .align-right a {
+    padding: 13px;
 }
 
 
@@ -228,7 +232,7 @@ h2 {
 }
 
 #testimonials h4 {
-    width : 100px;
+    width : 150px;
     font-size:16px;
     margin: auto;
 }
@@ -346,6 +350,11 @@ h2 {
     margin-right: 20px;
 }
 
+.footer-container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* ==========================================================================
    Responsive Classes
    ========================================================================== */
@@ -404,6 +413,10 @@ input[type=checkbox]:checked ~ nav ul{
     nav ul li a {
         padding: 12px 25px;
     }
+
+    header .align-right {
+        display:none;
+    }
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
@@ -452,14 +465,20 @@ input[type=checkbox]:checked ~ nav ul{
         margin-top:5px;
     }
 
+    .footer-container {
+        padding-top: 250px;
+        font-size: 12px;
+        line-height: 6px;
+    }
+
     .footer-container .wrapper-right img {
-        width: 35%;
+        padding: 10px;
+        width: 50%;
     }
 
     .footer-container .wrapper-right .simply-business {
         width:20%;
     }
-
 
 
 
