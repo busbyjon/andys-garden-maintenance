@@ -4,6 +4,6 @@ class LeadMailer < ActionMailer::Base
   def lead_email(lead)
   	@lead = lead
   	@url = url_for(controller: 'admin/dashboard', action:'index', :only_path => false, :host => "andysgm.co.uk")
-  	mail(to: "busbyjon@gmail.com", subject: "New lead submitted")
+  	mail(to: "andysgardenm@gmail.com", subject: "New lead submitted")
   end
 end
