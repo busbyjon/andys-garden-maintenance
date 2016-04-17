@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
   	@lead = Lead.new
+    @images = Image.all
   end
 
   def submit_lead
@@ -16,7 +17,7 @@ class WelcomeController < ApplicationController
   end
 
   def thank_you
-
+      @images = Image.all
   end
 
   private
