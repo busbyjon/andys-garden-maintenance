@@ -40,7 +40,7 @@ $(document).ready( function() {
       arrows: false,
       adaptiveHeight:true,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 5000
     });
 
     $('.nav').stickyNavbar();
