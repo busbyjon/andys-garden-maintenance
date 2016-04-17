@@ -16,51 +16,11 @@
                 </div>
                 <div class="section" id="gallery">
                     <div id="carosel" class="responsive-carosel">
-                        <a href="img/gallery/large/lawn-1.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-1.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-2.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-2.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-3.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-3.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-4.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-4.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-5.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-5.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-6.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-6.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-7.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-7.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-8.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-8.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/lawn-9.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/lawn-9.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/shed-1.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/shed-1.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/shed-2.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/shed-2.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/shed-3.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/shed-3.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/after-1.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/after-1.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/after-2.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/after-2.jpg" alt="An example of Andy's work"/>
-                        </a>
-                        <a href="img/gallery/large/after-3.jpg" class='gallery-link'>
-                            <img width="145" height="145" src="img/gallery/after-3.jpg" alt="An example of Andy's work"/>
-                        </a>
+                        <% @images.each do |image|  %>
+                            <a href="<%= image.imagefile.url(:large)%>" class='gallery-link'>
+                                <img width="145" height="145" src="<%= image.imagefile.url(:thumb)%>" alt="An example of Andy's work"/>
+                            </a>
+                        <% end %>
                     </div>
                 </div>
                 <div class="section leaf-background scrollto" id='testimonials'>

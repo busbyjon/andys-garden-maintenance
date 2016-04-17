@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get 'welcome/index'
   get "thank_you" => "welcome#thank_you"
+  get "imagefile/:id/:style" => "welcome#imagefile"
 
   root 'welcome#index'
 

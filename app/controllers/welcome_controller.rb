@@ -1,7 +1,17 @@
 class WelcomeController < ApplicationController
+
   def index
   	@lead = Lead.new
     @images = Image.all
+  end
+
+  def imagefile 
+      @image = Image.find(params[:id])
+      style = params[:style] ? params[:style] : 'original'
+
+      send_data @image.send(:imagefile).file_contents('original'),
+        :filename => @image.imagefile_file_name,
+        :type => @image.imagefile_content_type
   end
 
   def submit_lead
