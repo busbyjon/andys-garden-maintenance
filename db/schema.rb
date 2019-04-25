@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160417190612) do
 
-  create_table "active_admin_comments", force: true do |t|
+  create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
     t.text     "body"
     t.string   "resource_id",   null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20160417190612) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
-  create_table "admin_users", force: true do |t|
+  create_table "admin_users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -46,23 +46,23 @@ ActiveRecord::Schema.define(version: 20160417190612) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
-  create_table "imagefiles", force: true do |t|
+  create_table "imagefiles", force: :cascade do |t|
     t.integer "image_id"
     t.string  "style"
     t.binary  "file_contents"
   end
 
-  create_table "images", force: true do |t|
+  create_table "images", force: :cascade do |t|
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "imagefile_file_name"
     t.string   "imagefile_content_type"
-    t.integer  "imagefile_file_size"
+    t.integer  "imagefile_file_size",    limit: 8
     t.datetime "imagefile_updated_at"
   end
 
-  create_table "leads", force: true do |t|
+  create_table "leads", force: :cascade do |t|
     t.string   "name"
     t.string   "phone"
     t.string   "query"
