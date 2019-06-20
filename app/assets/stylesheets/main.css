@@ -169,7 +169,7 @@ h3 {
 }
 
 #hero {
-    background-image: url("../img/hero.png");
+    background-image: url("../img/hero-min.png");
     color:#FFFFFF;
     margin-top: 92px;
 }
@@ -193,7 +193,7 @@ h2 {
 }
 
 .leaf-background {
-    background-image: url("../img/leaf-background.png");
+    background-image: url("../img/leaf-background-min.png");
 }
 
 .text-section {
@@ -335,7 +335,7 @@ h2 {
     position:relative;
     height:220px;
     display: block;
-    background:url("../img/footer.jpg") repeat-x center top;
+    background:url("../img/footer-min.jpg") repeat-x center top;
 }
 
 .footer-container .wrapper-left {
