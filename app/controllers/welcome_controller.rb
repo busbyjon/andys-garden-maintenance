@@ -32,6 +32,6 @@ class WelcomeController < ApplicationController
 
   private
 	  def lead_params
-	    params.require(:lead).permit(:name, :phone, :query)
+	    params.require(:lead).permit(:name, :phone, :email, :query)
 	  end
 end
