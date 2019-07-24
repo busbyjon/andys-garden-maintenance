@@ -26,31 +26,16 @@
                 <div class="section leaf-background scrollto" id='testimonials'>
                     <a name="testimonial-section"></a> 
                     <div id="responsive-testimonials" class="responsive-testimonials text-section">
-                        <div class="testimonial">
-                            <blockquote><p>We are happy to recommend Andy, whether your garden job be big or small. He has competently helped us ” with routine tasks, such as hedge cutting and is currently maintaining my mother's garden on a regular basis, undertaking tasks at his own discretion to prepare the garden for Spring. What a treasure he is proving to be!</p>
-                            </blockquote>
-                            <h4>S Brown</h4>
-                        </div>
-                        <div class="testimonial">
-                            <blockquote><p>Andy has been helping me with my allotment and garden since he started his own business. He is reliable and his work is excellent. My church have also used him on many occasions. Friendly and trustworthy.</p>
-                            </blockquote>
-                            <h4>D. Iller</h4>
-                        </div>
-                        <div class="testimonial">
-                            <blockquote><p>Andy and his team performed miracles.  They turned a scruffy and demoralising back garden into an inviting space which I can't believe is mine. They found really lovely turf and laid it perfectly.  They sourced and put up new fences, relocated the garden gate (and made a new one from scratch).  They sorted out the woodwork inside the shed and the guttering, water butt, gravelling and the rest.    It's not just the work that is impressive, but the way in which the work is done: always positive, always on time, always tidy, always checking that things are as they should be and always suggesting some really good ideas about what can be done.  I am both delighted and relieved that Andy and his team were recommended to me, and I am more than happy to recommend them to you as well</p>
-                            </blockquote>
-                            <h4>P Lyseight-Jones</h4>
-                        </div>
-                        <div class="testimonial">
-                            <blockquote><p>Andy is extremely hard working, flexible and helpful. He offers support and advise, as well as keeping the garden tidy and weed free. He ensures that he completes all jobs well and responds to emails and texts within 24 hours</p>
-                            </blockquote>
-                            <h4>A Geewan</h4>
-                        </div>
-                        <div class="testimonial">
-                            <blockquote><p>Andy has been working for us for over 18 months now and is someone that i would completely recommend.  Very hardworking and always willing to help on various different jobs around the garden, Andy is also extremely trustworthy and often comes whilst we are away to help keep on top things</p>
-                            </blockquote>
-                            <h4>M Pearcey</h4>
-                        </div>
+
+                            <% @quotes.each do |quote| %>
+
+                                <div class="testimonial">
+                                    <blockquote><p><%= quote.quote %></p>
+                                    </blockquote>
+                                    <h4><%= quote.name %></h4>
+                                </div>
+
+                            <% end %> 
                     </div>
                 </div>
                 <div class="section" id="services">

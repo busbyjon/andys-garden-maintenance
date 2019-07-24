@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   def index
   	@lead = Lead.new
     @images = Image.all
+    @quotes = Quote.where("active = 't'")
   end
 
   def imagefile 
@@ -28,6 +29,7 @@ class WelcomeController < ApplicationController
 
   def thank_you
       @images = Image.all
+      @quotes = Quote.where("active = 't'")
   end
 
   private
