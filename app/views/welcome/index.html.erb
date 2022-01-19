@@ -8,6 +8,7 @@
                 <div class="section scrollto" id="contact">
                     <a name="contact-section"></a> 
                     <h3>Contact Us</h3>
+                    <% if @form_setting.setting == true %>
                     <%= form_for :lead, url: {action: "submit_lead"}, html: {id:"contact-form"} do |f| %>
                     <p>
                         <label for="name">Name:</label>
@@ -28,6 +29,10 @@
                     <p>
                         <button name="submit">SUBMIT ></button>
                     </p>
+                    <% end %>
+                    <% else %>
+                    <p><strong>Oh No! We are currently full - servicing our existing clients</strong></p>
+                    <p>If you would like to be added to our waiting list, please contact <a href="mailto:andysgardenm@gmail.com">andysgardenm@gmail.com</a></p>
                     <% end %>
                 </div>
 

@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
   	@lead = Lead.new
     @images = Image.all
     @quotes = Quote.where("active = 't'")
+    @form_setting = Setting.find_by name: 'Form_Enabled'
   end
 
   def imagefile 
