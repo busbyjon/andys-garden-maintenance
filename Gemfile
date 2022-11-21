@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby "~> 3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7'
+gem 'rails', '~> 6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
@@ -44,5 +44,7 @@ gem 'activeadmin'
 gem 'devise'
 gem 'rails_12factor', group: :production
 
-gem 'paperclip'
+gem 'kt-paperclip'
 gem "paperclip_database"
+gem 'webrick'
+gem 'net-smtp', require: false
